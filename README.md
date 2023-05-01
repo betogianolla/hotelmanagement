@@ -5,7 +5,7 @@ Hotel Management Data Analysis
 1) Dataset
 2) SQL Querys:
   
-      with consolidado as (
+        with consolidado as (
         select * from dbo.[2018]
         union
         select * from dbo.[2019]
@@ -13,7 +13,7 @@ Hotel Management Data Analysis
         select * from dbo.[2020])
  
 
-       select
+        select
         arrival_date_year,
         hotel,
         round(sum((stays_in_week_nights+stays_in_weekend_nights)*adr), 2) as receita
